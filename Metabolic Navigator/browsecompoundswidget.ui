@@ -1,0 +1,230 @@
+<ui version="4.0" >
+ <class>BrowseCompoundsWidgetClass</class>
+ <widget class="QDockWidget" name="BrowseCompoundsWidgetClass" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>502</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="sizePolicy" >
+   <sizepolicy vsizetype="Maximum" hsizetype="Maximum" >
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="features" >
+   <set>QDockWidget::AllDockWidgetFeatures</set>
+  </property>
+  <property name="allowedAreas" >
+   <set>Qt::LeftDockWidgetArea</set>
+  </property>
+  <property name="windowTitle" >
+   <string>Compounds</string>
+  </property>
+  <widget class="QWidget" name="widget" >
+   <property name="geometry" >
+    <rect>
+     <x>0</x>
+     <y>22</y>
+     <width>502</width>
+     <height>458</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" >
+    <item row="2" column="0" >
+     <layout class="QHBoxLayout" >
+      <property name="spacing" >
+       <number>6</number>
+      </property>
+      <property name="margin" >
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QPushButton" name="pushButton_3" >
+        <property name="maximumSize" >
+         <size>
+          <width>100</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="text" >
+         <string>Show selected</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_2" >
+        <property name="maximumSize" >
+         <size>
+          <width>100</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="text" >
+         <string>Show all</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="0" column="0" colspan="3" >
+     <widget class="QTableWidget" name="tableWidget" >
+      <property name="minimumSize" >
+       <size>
+        <width>0</width>
+        <height>200</height>
+       </size>
+      </property>
+      <property name="editTriggers" >
+       <set>QAbstractItemView::NoEditTriggers</set>
+      </property>
+      <property name="selectionMode" >
+       <enum>QAbstractItemView::SingleSelection</enum>
+      </property>
+      <property name="columnCount" >
+       <number>4</number>
+      </property>
+      <column/>
+      <column/>
+      <column/>
+      <column/>
+     </widget>
+    </item>
+    <item row="1" column="0" colspan="3" >
+     <widget class="QGroupBox" name="groupBox" >
+      <property name="minimumSize" >
+       <size>
+        <width>0</width>
+        <height>100</height>
+       </size>
+      </property>
+      <property name="title" >
+       <string>Compound information</string>
+      </property>
+      <layout class="QVBoxLayout" >
+       <property name="spacing" >
+        <number>6</number>
+       </property>
+       <property name="margin" >
+        <number>9</number>
+       </property>
+       <item>
+        <layout class="QGridLayout" >
+         <property name="margin" >
+          <number>0</number>
+         </property>
+         <property name="spacing" >
+          <number>6</number>
+         </property>
+         <item rowspan="6" row="1" column="0" >
+          <widget class="QListWidget" name="listWidget" />
+         </item>
+         <item row="0" column="0" >
+          <widget class="QLabel" name="label" >
+           <property name="text" >
+            <string>Names</string>
+           </property>
+          </widget>
+         </item>
+         <item rowspan="2" row="1" column="1" >
+          <widget class="QListWidget" name="listWidget_2" />
+         </item>
+         <item rowspan="6" row="1" column="2" >
+          <widget class="QListWidget" name="listWidget_3" />
+         </item>
+         <item row="0" column="2" >
+          <widget class="QLabel" name="label_6" >
+           <property name="text" >
+            <string>Transitions</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1" >
+          <widget class="QLabel" name="label_2" >
+           <property name="text" >
+            <string>Reactions</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="1" >
+          <widget class="QLineEdit" name="lineEdit" >
+           <property name="minimumSize" >
+            <size>
+             <width>0</width>
+             <height>20</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="1" >
+          <widget class="QLabel" name="label_3" >
+           <property name="text" >
+            <string>Prochirales</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1" >
+          <widget class="QLabel" name="label_4" >
+           <property name="text" >
+            <string>Homotopes</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1" >
+          <widget class="QLineEdit" name="lineEdit_2" >
+           <property name="minimumSize" >
+            <size>
+             <width>0</width>
+             <height>20</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="2" column="2" >
+     <widget class="QPushButton" name="pushButton_4" >
+      <property name="maximumSize" >
+       <size>
+        <width>141</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="text" >
+       <string>Open transition window</string>
+      </property>
+      <property name="default" >
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1" >
+     <spacer>
+      <property name="orientation" >
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0" >
+       <size>
+        <width>111</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+   </layout>
+   <zorder>tableWidget</zorder>
+   <zorder>groupBox</zorder>
+   <zorder>pushButton_4</zorder>
+   <zorder></zorder>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11" />
+ <resources/>
+ <connections/>
+</ui>

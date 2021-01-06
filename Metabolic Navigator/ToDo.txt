@@ -1,0 +1,4 @@
+- change Compounds to MetaboliteObjects in Equation class
+    
+BUG: compartmentinformationen zu den metaboliten werden nicht richtig gespeichert, wenn ein metabolit in einer equation 
+			doppelt vorkommt!!!

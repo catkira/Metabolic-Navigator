@@ -1,0 +1,373 @@
+<ui version="4.0" >
+ <class>MetabolicNavigatorClass</class>
+ <widget class="QMainWindow" name="MetabolicNavigatorClass" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>549</width>
+    <height>378</height>
+   </rect>
+  </property>
+  <property name="acceptDrops" >
+   <bool>true</bool>
+  </property>
+  <property name="windowTitle" >
+   <string>Metabolic Network Navigator 1.0</string>
+  </property>
+  <property name="dockOptions" >
+   <set>QMainWindow::AllowTabbedDocks|QMainWindow::AnimatedDocks|QMainWindow::ForceTabbedDocks|QMainWindow::VerticalTabs</set>
+  </property>
+  <widget class="QWidget" name="centralWidget" >
+   <property name="geometry" >
+    <rect>
+     <x>0</x>
+     <y>36</y>
+     <width>549</width>
+     <height>320</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QMenuBar" name="menuBar" >
+   <property name="geometry" >
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>549</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_File" >
+    <property name="title" >
+     <string>&amp;File</string>
+    </property>
+    <addaction name="action_Quit" />
+   </widget>
+   <widget class="QMenu" name="menu_Options" >
+    <property name="title" >
+     <string>&amp;Options</string>
+    </property>
+    <addaction name="action_Startup" />
+   </widget>
+   <widget class="QMenu" name="menuAbout" >
+    <property name="title" >
+     <string>About</string>
+    </property>
+    <addaction name="action_About" />
+   </widget>
+   <widget class="QMenu" name="menu_Import" >
+    <property name="title" >
+     <string>&amp;Import</string>
+    </property>
+    <addaction name="actionCharit_user_files" />
+    <addaction name="actionKegg" />
+    <addaction name="actionSBML_2" />
+    <addaction name="separator" />
+    <addaction name="actionCarbon_Fate_Maps" />
+    <addaction name="separator" />
+    <addaction name="actionKegg_Enzymes" />
+    <addaction name="action_Organism" />
+   </widget>
+   <widget class="QMenu" name="menuBrowse" >
+    <property name="title" >
+     <string>&amp;Windows</string>
+    </property>
+    <addaction name="action_Search_window" />
+    <addaction name="action_Log_window" />
+    <addaction name="action_Graph_viewer" />
+    <addaction name="separator" />
+    <addaction name="actionCompounds_Widget" />
+    <addaction name="actionReactions_2" />
+    <addaction name="action_Organisms" />
+    <addaction name="separator" />
+    <addaction name="actionDatasets" />
+    <addaction name="actionCommon_actions" />
+   </widget>
+   <widget class="QMenu" name="menu_Algorithms" >
+    <property name="title" >
+     <string>&amp;Tools</string>
+    </property>
+    <addaction name="actionLabel_position_assistent" />
+    <addaction name="action_Path_finder" />
+    <addaction name="actionMetabolic_walker" />
+    <addaction name="separator" />
+    <addaction name="actionFind_non_standard_metabolit_names" />
+    <addaction name="actionFix_compartments" />
+    <addaction name="actionCalculate_missing_rpairs" />
+    <addaction name="action_Palson_Kegg_converter" />
+    <addaction name="separator" />
+    <addaction name="actionCalculate_linked_reactions_for_compounds" />
+   </widget>
+   <addaction name="menu_File" />
+   <addaction name="menuBrowse" />
+   <addaction name="menu_Import" />
+   <addaction name="menu_Algorithms" />
+   <addaction name="menu_Options" />
+   <addaction name="menuAbout" />
+  </widget>
+  <widget class="QToolBar" name="mainToolBar" >
+   <property name="geometry" >
+    <rect>
+     <x>0</x>
+     <y>24</y>
+     <width>549</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="orientation" >
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <attribute name="toolBarArea" >
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak" >
+    <bool>false</bool>
+   </attribute>
+   <addaction name="separator" />
+  </widget>
+  <widget class="QStatusBar" name="statusBar" >
+   <property name="geometry" >
+    <rect>
+     <x>0</x>
+     <y>356</y>
+     <width>549</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <action name="action_Quit" >
+   <property name="text" >
+    <string>&amp;Quit</string>
+   </property>
+  </action>
+  <action name="actionCharit_user_files" >
+   <property name="text" >
+    <string>Metannogen Datasets</string>
+   </property>
+   <property name="visible" >
+    <bool>false</bool>
+   </property>
+  </action>
+  <action name="actionShow_log_window" >
+   <property name="text" >
+    <string>show log window</string>
+   </property>
+  </action>
+  <action name="actionDatasets" >
+   <property name="text" >
+    <string>&amp;Datasets</string>
+   </property>
+   <property name="visible" >
+    <bool>false</bool>
+   </property>
+  </action>
+  <action name="actionReactions" >
+   <property name="text" >
+    <string>Reactions browser</string>
+   </property>
+  </action>
+  <action name="actionCompounds" >
+   <property name="text" >
+    <string>Compounds browser</string>
+   </property>
+  </action>
+  <action name="actionKegg" >
+   <property name="text" >
+    <string>&amp;Kegg reactions and compounds</string>
+   </property>
+  </action>
+  <action name="action_Scope_analysis" >
+   <property name="text" >
+    <string>&amp;Scope analysis</string>
+   </property>
+  </action>
+  <action name="action_Path_finder" >
+   <property name="text" >
+    <string>&amp;Manual network creation</string>
+   </property>
+   <property name="shortcut" >
+    <string>Ctrl+M</string>
+   </property>
+  </action>
+  <action name="action_Reactions" >
+   <property name="text" >
+    <string>&amp;Reactions</string>
+   </property>
+  </action>
+  <action name="action_Startup" >
+   <property name="text" >
+    <string>&amp;Startup</string>
+   </property>
+  </action>
+  <action name="action_Log_window" >
+   <property name="text" >
+    <string>&amp;Log window</string>
+   </property>
+  </action>
+  <action name="action_User_datasets" >
+   <property name="text" >
+    <string>&amp;Datasets</string>
+   </property>
+  </action>
+  <action name="actionStoichometry_matrix" >
+   <property name="text" >
+    <string>&amp;Stoichiometric matrix</string>
+   </property>
+  </action>
+  <action name="actionSBML" >
+   <property name="text" >
+    <string>SBML</string>
+   </property>
+  </action>
+  <action name="action_Compounds" >
+   <property name="text" >
+    <string>&amp;Compounds</string>
+   </property>
+  </action>
+  <action name="actionFind_non_standard_metabolit_names" >
+   <property name="text" >
+    <string>Find non-standard metabolit names</string>
+   </property>
+   <property name="visible" >
+    <bool>false</bool>
+   </property>
+  </action>
+  <action name="actionCalculate_linked_reactions_for_compounds" >
+   <property name="text" >
+    <string>Calculate linked reactions for compounds</string>
+   </property>
+   <property name="visible" >
+    <bool>false</bool>
+   </property>
+  </action>
+  <action name="action_Show" >
+   <property name="text" >
+    <string>&amp;Show</string>
+   </property>
+  </action>
+  <action name="actionFix_compartments" >
+   <property name="text" >
+    <string>Fix compartments</string>
+   </property>
+   <property name="visible" >
+    <bool>false</bool>
+   </property>
+  </action>
+  <action name="actionAdd_rpairs_from_kegg_to_user_reactions" >
+   <property name="text" >
+    <string>Add rpairs from kegg to user reactions</string>
+   </property>
+  </action>
+  <action name="actionCalculate_missing_rpairs" >
+   <property name="text" >
+    <string>Calculate missing rpairs</string>
+   </property>
+   <property name="visible" >
+    <bool>false</bool>
+   </property>
+  </action>
+  <action name="actionFind_Path_in_Network" >
+   <property name="text" >
+    <string>Find &amp;Path in Network</string>
+   </property>
+  </action>
+  <action name="action_About" >
+   <property name="text" >
+    <string>&amp;About</string>
+   </property>
+  </action>
+  <action name="actionMetabolic_walker" >
+   <property name="text" >
+    <string>Metabolic walker</string>
+   </property>
+   <property name="visible" >
+    <bool>false</bool>
+   </property>
+  </action>
+  <action name="action_Graph_viewer" >
+   <property name="text" >
+    <string>&amp;Graph viewer</string>
+   </property>
+  </action>
+  <action name="action_Search_window" >
+   <property name="text" >
+    <string>&amp;Search window</string>
+   </property>
+   <property name="shortcut" >
+    <string>Ctrl+F</string>
+   </property>
+  </action>
+  <action name="actionBrowse_window" >
+   <property name="text" >
+    <string>Browse window</string>
+   </property>
+  </action>
+  <action name="actionCompounds_Widget" >
+   <property name="text" >
+    <string>Compounds</string>
+   </property>
+  </action>
+  <action name="actionReactions_2" >
+   <property name="text" >
+    <string>Reactions</string>
+   </property>
+  </action>
+  <action name="actionCommon_actions" >
+   <property name="text" >
+    <string>Common actions</string>
+   </property>
+   <property name="visible" >
+    <bool>false</bool>
+   </property>
+  </action>
+  <action name="action_Organisms" >
+   <property name="text" >
+    <string>&amp;Organisms</string>
+   </property>
+  </action>
+  <action name="actionSBML_2" >
+   <property name="text" >
+    <string>SBML Metabolic Network</string>
+   </property>
+   <property name="visible" >
+    <bool>false</bool>
+   </property>
+  </action>
+  <action name="actionTest" >
+   <property name="text" >
+    <string>Test</string>
+   </property>
+  </action>
+  <action name="actionCarbon_Fate_Maps" >
+   <property name="text" >
+    <string>Carbon Fate Maps</string>
+   </property>
+  </action>
+  <action name="actionLabel_position_assistent" >
+   <property name="text" >
+    <string>Label position assistent</string>
+   </property>
+   <property name="shortcut" >
+    <string>Ctrl+L</string>
+   </property>
+  </action>
+  <action name="actionKegg_Enzymes" >
+   <property name="text" >
+    <string>Kegg enzymes and organisms</string>
+   </property>
+  </action>
+  <action name="action_Palson_Kegg_converter" >
+   <property name="text" >
+    <string>&amp;Palson to Kegg converter</string>
+   </property>
+  </action>
+  <action name="action_Organism" >
+   <property name="text" >
+    <string>User defined &amp;organism</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11" />
+ <resources/>
+ <connections/>
+</ui>

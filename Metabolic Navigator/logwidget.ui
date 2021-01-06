@@ -1,0 +1,43 @@
+<ui version="4.0" >
+ <class>LogWidgetClass</class>
+ <widget class="QDockWidget" name="LogWidgetClass" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="sizePolicy" >
+   <sizepolicy vsizetype="Maximum" hsizetype="Minimum" >
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="allowedAreas" >
+   <set>Qt::BottomDockWidgetArea|Qt::RightDockWidgetArea</set>
+  </property>
+  <property name="windowTitle" >
+   <string>Program log</string>
+  </property>
+  <widget class="QWidget" name="widget" >
+   <property name="geometry" >
+    <rect>
+     <x>0</x>
+     <y>22</y>
+     <width>400</width>
+     <height>278</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" >
+    <item>
+     <widget class="QTextEdit" name="textEdit" />
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11" />
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,127 @@
+<ui version="4.0" >
+ <class>FindCompoundsClass</class>
+ <widget class="QDialog" name="FindCompoundsClass" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>340</width>
+    <height>152</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Find compounds</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox_3" >
+   <property name="geometry" >
+    <rect>
+     <x>210</x>
+     <y>0</y>
+     <width>121</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="title" >
+    <string>Search criterion</string>
+   </property>
+   <widget class="QRadioButton" name="radioButtonFormula" >
+    <property name="geometry" >
+     <rect>
+      <x>10</x>
+      <y>60</y>
+      <width>83</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>Formula</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButtonKeggID" >
+    <property name="geometry" >
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>83</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>Name/Id</string>
+    </property>
+    <property name="checked" >
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="pushButton" >
+   <property name="geometry" >
+    <rect>
+     <x>120</x>
+     <y>120</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>Search</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBoxKeggID" >
+   <property name="geometry" >
+    <rect>
+     <x>10</x>
+     <y>0</y>
+     <width>191</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="title" >
+    <string>Name/Id</string>
+   </property>
+   <widget class="MyLineEdit" name="lineEdit" >
+    <property name="geometry" >
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>171</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBoxFormula" >
+   <property name="geometry" >
+    <rect>
+     <x>10</x>
+     <y>50</y>
+     <width>191</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="title" >
+    <string>Formula</string>
+   </property>
+   <widget class="MyLineEdit" name="lineEdit_3" >
+    <property name="geometry" >
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>171</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11" />
+ <customwidgets>
+  <customwidget>
+   <class>MyLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>mylineedit.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

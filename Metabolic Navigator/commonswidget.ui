@@ -1,0 +1,122 @@
+<ui version="4.0" >
+ <class>CommonsWidgetClass</class>
+ <widget class="QDockWidget" name="CommonsWidgetClass" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>413</width>
+    <height>128</height>
+   </rect>
+  </property>
+  <property name="allowedAreas" >
+   <set>Qt::BottomDockWidgetArea|Qt::NoDockWidgetArea|Qt::RightDockWidgetArea|Qt::TopDockWidgetArea</set>
+  </property>
+  <property name="windowTitle" >
+   <string>Common actions</string>
+  </property>
+  <widget class="QWidget" name="widget" >
+   <layout class="QVBoxLayout" >
+    <item>
+     <widget class="QGroupBox" name="groupBox" >
+      <property name="minimumSize" >
+       <size>
+        <width>405</width>
+        <height>90</height>
+       </size>
+      </property>
+      <property name="title" >
+       <string>Common Tasks</string>
+      </property>
+      <widget class="QPushButton" name="pushButton_4" >
+       <property name="geometry" >
+        <rect>
+         <x>280</x>
+         <y>20</y>
+         <width>91</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text" >
+        <string>Import datasets</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_6" >
+       <property name="geometry" >
+        <rect>
+         <x>10</x>
+         <y>50</y>
+         <width>164</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text" >
+        <string>Network creation and pathfinder</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_3" >
+       <property name="geometry" >
+        <rect>
+         <x>190</x>
+         <y>20</y>
+         <width>81</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="sizePolicy" >
+        <sizepolicy vsizetype="Preferred" hsizetype="Minimum" >
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text" >
+        <string>RPairs</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_5" >
+       <property name="geometry" >
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>81</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="sizePolicy" >
+        <sizepolicy vsizetype="Preferred" hsizetype="Minimum" >
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text" >
+        <string>Compounds</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_13" >
+       <property name="geometry" >
+        <rect>
+         <x>100</x>
+         <y>20</y>
+         <width>81</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="sizePolicy" >
+        <sizepolicy vsizetype="Preferred" hsizetype="Minimum" >
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text" >
+        <string>Reactions</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11" />
+ <resources/>
+ <connections/>
+</ui>

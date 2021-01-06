@@ -1,0 +1,9 @@
+0.1 -> 0.2
+- moved "search compound" and "search reaction" into a single "search dialog"
+- implemented dot.exe
+- implemented compartmentized graph
+
+0.2 -> 0.3
+- parsing rpairs file
+- moved "browse compounds" and "browse reactions" into a single "browse dialog"
+- generate and view transition matrix

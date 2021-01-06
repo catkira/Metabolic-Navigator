@@ -1,0 +1,200 @@
+<ui version="4.0" >
+ <class>FindReactionsClass</class>
+ <widget class="QDialog" name="FindReactionsClass" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>312</width>
+    <height>260</height>
+   </rect>
+  </property>
+  <property name="maximumSize" >
+   <size>
+    <width>312</width>
+    <height>260</height>
+   </size>
+  </property>
+  <property name="windowTitle" >
+   <string>Find reactions</string>
+  </property>
+  <widget class="QComboBox" name="comboBox" >
+   <property name="geometry" >
+    <rect>
+     <x>120</x>
+     <y>70</y>
+     <width>67</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox" >
+   <property name="geometry" >
+    <rect>
+     <x>10</x>
+     <y>120</y>
+     <width>281</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="title" >
+    <string>search in</string>
+   </property>
+   <widget class="QCheckBox" name="checkBox_3" >
+    <property name="geometry" >
+     <rect>
+      <x>30</x>
+      <y>40</y>
+      <width>101</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>only accepted</string>
+    </property>
+    <property name="checked" >
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_4" >
+    <property name="geometry" >
+     <rect>
+      <x>30</x>
+      <y>60</y>
+      <width>101</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>no transporter</string>
+    </property>
+    <property name="checked" >
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_5" >
+    <property name="geometry" >
+     <rect>
+      <x>30</x>
+      <y>80</y>
+      <width>121</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>ignore compartments</string>
+    </property>
+    <property name="checked" >
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_datasets" >
+    <property name="geometry" >
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>101</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>user datasets</string>
+    </property>
+    <property name="checked" >
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_kegg" >
+    <property name="geometry" >
+     <rect>
+      <x>150</x>
+      <y>20</y>
+      <width>101</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>kegg reactions</string>
+    </property>
+    <property name="checked" >
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="MyTextEdit" name="textEdit" >
+   <property name="geometry" >
+    <rect>
+     <x>10</x>
+     <y>50</y>
+     <width>104</width>
+     <height>64</height>
+    </rect>
+   </property>
+   <property name="tabChangesFocus" >
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="MyTextEdit" name="textEdit_2" >
+   <property name="geometry" >
+    <rect>
+     <x>200</x>
+     <y>50</y>
+     <width>104</width>
+     <height>64</height>
+    </rect>
+   </property>
+   <property name="tabChangesFocus" >
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton" >
+   <property name="geometry" >
+    <rect>
+     <x>110</x>
+     <y>230</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>Search</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label" >
+   <property name="geometry" >
+    <rect>
+     <x>10</x>
+     <y>30</y>
+     <width>101</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>left metabolites</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2" >
+   <property name="geometry" >
+    <rect>
+     <x>200</x>
+     <y>30</y>
+     <width>81</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>right metabolites</string>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11" />
+ <customwidgets>
+  <customwidget>
+   <class>MyTextEdit</class>
+   <extends>QTextEdit</extends>
+   <header>mytextedit.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
